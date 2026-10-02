@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexora Labs | Enterprise Digital Solutions</title>
+
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =====================================
+         NAVBAR (Glassmorphic Top Navigation)
+    ====================================== -->
+
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <span class="brand-icon">
+                    <i class="bi bi-hexagon-fill"></i>
+                </span>
+                <span class="brand-name">
+                    Nexora<span>Labs</span>
+                </span>
+            </a>
+
+            <button
+                class="navbar-toggler border-0 shadow-none p-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav mx-auto mb-3 mb-lg-0 fw-semibold">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#why-us">Why Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-2">
+                    <a href="login.html" class="btn btn-outline-custom">
+                        Login
+                    </a>
+                    <a href="signup.html" class="btn btn-primary-custom">
+                        Get Started <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- =====================================
+         HERO SECTION (100vh Desktop View)
+    ====================================== -->
+
+    <main>
+
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+
+                    <!-- Left Hero Content -->
+                    <div class="col-lg-6">
+
+                        <span class="hero-badge">
+                            <span class="pulse-dot me-1"></span>
+                            ENTERPRISE DIGITAL SOLUTIONS 2026
+                        </span>
+
+                        <h1 class="hero-title">
+                            Build Smarter.
+                            <span>Scale Faster.</span>
+                        </h1>
+
+                        <p class="hero-description">
+                            Nexora Labs helps modern enterprises build, automate, and scale digital software systems engineered for real business growth.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="signup.html" class="btn btn-primary-custom btn-lg px-4">
+                                Get Started <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                            <a href="#services" class="btn btn-outline-custom btn-lg px-4">
+                                Explore Services
+                            </a>
+                        </div>
+
+                        <div class="hero-trust">
+                            <div class="trust-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                Enterprise SLAs
+                            </div>
+                            <div class="trust-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                99.99% Uptime
+                            </div>
+                            <div class="trust-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                AI Automation
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Right Hero Visual SaaS Dashboard Preview -->
+                    <div class="col-lg-6">
+
+                        <div class="hero-visual position-relative">
+
+                            <!-- Floating Glass Card Top-Left -->
+                            <div class="floating-card floating-card-top-left d-none d-md-flex align-items-center gap-2">
+                                <div class="float-icon-bg bg-primary-subtle text-primary rounded-3 p-1.5 d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-shield-check-fill fs-6"></i>
+                                </div>
+                                <div>
+                                    <strong class="d-block text-dark fw-bold" style="font-size: 12px; line-height: 1.2;">Enterprise Grade</strong>
+                                    <small class="text-muted d-block" style="font-size: 10px;">ISO 27001 &bull; 256-bit AES</small>
+                                </div>
+                            </div>
+
+                            <!-- Floating Glass Card Bottom-Right -->
+                            <div class="floating-card floating-card-bottom-right d-none d-md-flex align-items-center gap-2">
+                                <div class="float-icon-bg bg-success-subtle text-success rounded-3 p-1.5 d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-lightning-charge-fill fs-6"></i>
+                                </div>
+                                <div>
+                                    <strong class="d-block text-dark fw-bold" style="font-size: 12px; line-height: 1.2;">99.99% Uptime</strong>
+                                    <small class="text-muted d-block" style="font-size: 10px;">Live Sync &bull; 2ms Latency</small>
+                                </div>
+                            </div>
+
+                            <!-- SaaS Dashboard Mockup Container -->
+                            <div class="hero-dashboard-mockup shadow-lg border rounded-4 overflow-hidden bg-white">
+
+                                <!-- Window Header Bar -->
+                                <div class="mockup-header-bar d-flex align-items-center justify-content-between px-3 py-1.5 bg-light border-bottom">
+                                    <div class="d-flex align-items-center gap-1.5" style="gap: 5px;">
+                                        <span class="window-dot red"></span>
+                                        <span class="window-dot yellow"></span>
+                                        <span class="window-dot green"></span>
+                                    </div>
+                                    <div class="mockup-url-pill px-2.5 py-0.5 bg-white border rounded-pill d-flex align-items-center gap-1 shadow-2xs" style="font-size: 10.5px; color: #475569; font-weight: 600;">
+                                        <i class="bi bi-lock-fill text-success" style="font-size: 9.5px;"></i> nexora.io/analytics
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 bg-success-subtle text-success border border-success-subtle px-2 py-0.5 rounded-pill" style="font-size: 10px; font-weight: 600;">
+                                        <span class="pulse-dot me-1"></span> Live Demo
+                                    </div>
+                                </div>
+
+                                <!-- Mockup Inner Body -->
+                                <div class="mockup-body p-3 bg-white">
+
+                                    <!-- Header Row: App Info & Admin -->
+                                    <div class="d-flex align-items-center justify-content-between pb-2 mb-2 border-bottom">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="stat-icon-gradient rounded-3 text-white p-1.5 d-flex align-items-center justify-content-center" style="width: 30px; height: 30px; background: linear-gradient(135deg, #2563eb, #7c3aed);">
+                                                <i class="bi bi-bar-chart-line-fill fs-6"></i>
+                                            </div>
+                                            <div>
+                                                <h6 class="mb-0 fw-bold text-dark" style="font-size: 13px; letter-spacing: -0.2px;">Nexora Analytics</h6>
+                                                <small class="text-muted d-block" style="font-size: 10px;">Real-Time Enterprise Metrics</small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-1.5">
+                                            <span class="badge bg-light text-dark border px-2 py-1 fw-semibold" style="font-size: 10px;">
+                                                <i class="bi bi-calendar3 me-1 text-primary"></i> Sep 2026
+                                            </span>
+                                            <div class="avatar-circle text-white fw-bold d-flex align-items-center justify-content-center rounded-circle" style="width: 28px; height: 28px; font-size: 10px; background: linear-gradient(135deg, #2563eb, #1d4ed8);">AS</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 4 Metric Cards Grid (2x2) -->
+                                    <div class="row g-2 mb-2">
+                                        <div class="col-6">
+                                            <div class="p-2 border rounded-3 bg-light-subtle shadow-2xs">
+                                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                                    <span class="text-muted fw-bold text-uppercase" style="font-size: 8.5px; letter-spacing: 0.4px;">TOTAL EMPLOYEES</span>
+                                                    <span class="badge bg-primary-subtle text-primary fw-bold" style="font-size: 8.5px;">+2</span>
+                                                </div>
+                                                <div class="d-flex align-items-baseline gap-1.5">
+                                                    <h5 class="fw-extrabold text-dark mb-0" style="font-size: 15px; letter-spacing: -0.4px;">24</h5>
+                                                    <small class="text-muted" style="font-size: 9px;">Members</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="p-2 border rounded-3 bg-light-subtle shadow-2xs">
+                                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                                    <span class="text-muted fw-bold text-uppercase" style="font-size: 8.5px; letter-spacing: 0.4px;">ACTIVE ONLINE</span>
+                                                    <span class="badge bg-success-subtle text-success fw-bold" style="font-size: 8.5px;">75%</span>
+                                                </div>
+                                                <div class="d-flex align-items-baseline gap-1.5">
+                                                    <h5 class="fw-extrabold text-dark mb-0" style="font-size: 15px; letter-spacing: -0.4px;">18</h5>
+                                                    <small class="text-success fw-semibold" style="font-size: 9px;">Online Now</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="p-2 border rounded-3 bg-light-subtle shadow-2xs">
+                                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                                    <span class="text-muted fw-bold text-uppercase" style="font-size: 8.5px; letter-spacing: 0.4px;">ACTIVE PROJECTS</span>
+                                                    <span class="badge bg-warning-subtle text-warning-emphasis fw-bold" style="font-size: 8.5px;">4 Review</span>
+                                                </div>
+                                                <div class="d-flex align-items-baseline gap-1.5">
+                                                    <h5 class="fw-extrabold text-dark mb-0" style="font-size: 15px; letter-spacing: -0.4px;">12</h5>
+                                                    <small class="text-muted" style="font-size: 9px;">In Progress</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="p-2 border rounded-3 bg-light-subtle shadow-2xs">
+                                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                                    <span class="text-muted fw-bold text-uppercase" style="font-size: 8.5px; letter-spacing: 0.4px;">REMOTE &amp; ON LEAVE</span>
+                                                    <span class="badge bg-info-subtle text-info-emphasis fw-bold" style="font-size: 8.5px;">2 / 2</span>
+                                                </div>
+                                                <div class="d-flex align-items-baseline gap-1.5">
+                                                    <h5 class="fw-extrabold text-dark mb-0" style="font-size: 15px; letter-spacing: -0.4px;">4</h5>
+                                                    <small class="text-muted" style="font-size: 9px;">Offsite</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Main Chart Card Container (Performance Analytics Graph) -->
+                                    <div class="p-2.5 border rounded-3 bg-white shadow-2xs mb-2">
+                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                            <div class="d-flex align-items-center gap-1.5">
+                                                <div class="rounded-2 bg-primary-subtle text-primary d-flex align-items-center justify-content-center" style="width: 24px; height: 24px;">
+                                                    <i class="bi bi-graph-up-arrow fs-6"></i>
+                                                </div>
+                                                <span class="fw-bold text-dark" style="font-size: 11.5px;">Performance Analytics Graph</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1 bg-light p-0.5 rounded-2 border">
+                                                <span class="px-1.5 py-0.5 rounded text-muted" style="font-size: 8.5px; cursor: pointer;">1D</span>
+                                                <span class="px-1.5 py-0.5 rounded text-muted" style="font-size: 8.5px; cursor: pointer;">1W</span>
+                                                <span class="px-1.5 py-0.5 rounded bg-primary text-white fw-bold shadow-2xs" style="font-size: 8.5px; cursor: pointer;">1M</span>
+                                                <span class="px-1.5 py-0.5 rounded text-muted" style="font-size: 8.5px; cursor: pointer;">1Y</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- SVG Chart Box with Volume Bars + Curve Trend -->
+                                        <div class="position-relative w-100 mb-1" style="height: 85px;">
+                                            
+                                            <!-- Tooltip Card over Peak -->
+                                            <div class="position-absolute bg-dark text-white px-2 py-0.5 rounded-3 shadow-md d-flex align-items-center gap-1" 
+                                                 style="top: -2px; right: 22%; z-index: 5; font-size: 9px; border: 1px solid rgba(255,255,255,0.15);">
+                                                <span class="badge bg-success px-1 py-0.5" style="font-size: 7.5px;">Peak</span>
+                                                <span>Sep: <strong>98.4%</strong></span>
+                                            </div>
+
+                                            <svg viewBox="0 0 360 100" preserveAspectRatio="none" style="width: 100%; height: 100%; display: block;">
+                                                <defs>
+                                                    <linearGradient id="mainHeroAreaGrad" x1="0" y1="0" x2="0" y2="1">
+                                                        <stop offset="0%" stop-color="#2563eb" stop-opacity="0.28"/>
+                                                        <stop offset="70%" stop-color="#3b82f6" stop-opacity="0.05"/>
+                                                        <stop offset="100%" stop-color="#2563eb" stop-opacity="0.00"/>
+                                                    </linearGradient>
+                                                    <linearGradient id="mainHeroLineGrad" x1="0" y1="0" x2="1" y2="0">
+                                                        <stop offset="0%" stop-color="#2563eb"/>
+                                                        <stop offset="60%" stop-color="#3b82f6"/>
+                                                        <stop offset="100%" stop-color="#7c3aed"/>
+                                                    </linearGradient>
+                                                </defs>
+
+                                                <!-- Horizontal grid lines -->
+                                                <line x1="0" y1="25" x2="360" y2="25" stroke="#f1f5f9" stroke-width="1"/>
+                                                <line x1="0" y1="55" x2="360" y2="55" stroke="#f1f5f9" stroke-width="1"/>
+                                                <line x1="0" y1="85" x2="360" y2="85" stroke="#f1f5f9" stroke-width="1"/>
+
+                                                <!-- Volume bars (12 months) -->
+                                                <rect x="10" y="60" width="12" height="35" rx="2" fill="#e2e8f0" opacity="0.6"/>
+                                                <rect x="38" y="52" width="12" height="43" rx="2" fill="#e2e8f0" opacity="0.6"/>
+                                                <rect x="66" y="68" width="12" height="27" rx="2" fill="#e2e8f0" opacity="0.6"/>
+                                                <rect x="94" y="45" width="12" height="50" rx="2" fill="#e2e8f0" opacity="0.6"/>
+                                                <rect x="122" y="55" width="12" height="40" rx="2" fill="#e2e8f0" opacity="0.6"/>
+                                                <rect x="150" y="38" width="12" height="57" rx="2" fill="#e2e8f0" opacity="0.6"/>
+                                                <rect x="178" y="48" width="12" height="47" rx="2" fill="#e2e8f0" opacity="0.6"/>
+                                                <rect x="206" y="35" width="12" height="60" rx="2" fill="#cbd5e1" opacity="0.7"/>
+                                                <rect x="234" y="20" width="12" height="75" rx="2" fill="#93c5fd" opacity="0.8"/>
+                                                <rect x="262" y="28" width="12" height="67" rx="2" fill="#cbd5e1" opacity="0.7"/>
+                                                <rect x="290" y="32" width="12" height="63" rx="2" fill="#e2e8f0" opacity="0.6"/>
+                                                <rect x="318" y="22" width="12" height="73" rx="2" fill="#c084fc" opacity="0.6"/>
+
+                                                <!-- Gradient fill below line -->
+                                                <path d="M 16 65 Q 44 55, 72 70 T 128 58 T 184 50 T 240 22 T 296 34 T 324 24 L 324 95 L 16 95 Z" fill="url(#mainHeroAreaGrad)"/>
+
+                                                <!-- Curved trend line -->
+                                                <path d="M 16 65 Q 44 55, 72 70 T 128 58 T 184 50 T 240 22 T 296 34 T 324 24" fill="none" stroke="url(#mainHeroLineGrad)" stroke-width="2.5" stroke-linecap="round"/>
+
+                                                <!-- Glowing data points -->
+                                                <circle cx="184" cy="50" r="3" fill="#2563eb" stroke="#ffffff" stroke-width="1.5"/>
+                                                <circle cx="240" cy="22" r="4.5" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+                                                <circle cx="324" cy="24" r="3.5" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5"/>
+                                            </svg>
+                                        </div>
+
+                                        <!-- 12-Month X-Axis Timeline Labels -->
+                                        <div class="d-flex align-items-center justify-content-between text-muted pt-1 border-top" style="font-size: 8.5px;">
+                                            <span>Jan</span>
+                                            <span>Feb</span>
+                                            <span>Mar</span>
+                                            <span>Apr</span>
+                                            <span>May</span>
+                                            <span>Jun</span>
+                                            <span>Jul</span>
+                                            <span>Aug</span>
+                                            <span class="text-primary fw-bold">Sep</span>
+                                            <span>Oct</span>
+                                            <span>Nov</span>
+                                            <span>Dec</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bottom Activity Row -->
+                                    <div class="p-2 border rounded-3 bg-light-subtle d-flex align-items-center justify-content-between gap-2">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="rounded-2 bg-success-subtle text-success p-1.5 d-flex align-items-center justify-content-center" style="width: 28px; height: 28px;">
+                                                <i class="bi bi-cart3 fs-6"></i>
+                                            </div>
+                                            <div>
+                                                <strong class="d-block text-dark" style="font-size: 11px; line-height: 1.2;">E-Commerce Platform</strong>
+                                                <small class="text-muted d-block" style="font-size: 9px;">Lead: Warda Khan &bull; Sprint 4</small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-1.5" style="width: 85px;">
+                                            <div class="progress flex-grow-1" style="height: 5px; background: #e2e8f0;">
+                                                <div class="progress-bar bg-primary rounded-pill" style="width: 82%;"></div>
+                                            </div>
+                                            <span class="fw-bold text-dark" style="font-size: 9px;">82%</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             STATISTICS CARDS GRID SECTION
+        ====================================== -->
+
+        <section class="stats-section py-5 border-top border-bottom bg-white">
+            <div class="container">
+                <div class="row g-4">
+
+                    <!-- Stat 1 -->
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-card text-center p-4 border rounded-4 shadow-sm h-100">
+                            <div class="stat-icon blue mx-auto mb-3">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <h2 class="display-6 fw-extrabold text-dark mb-1" style="font-weight: 800;">99.99%</h2>
+                            <p class="text-muted small mb-0 fw-semibold">Guaranteed System Uptime</p>
+                        </div>
+                    </div>
+
+                    <!-- Stat 2 -->
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-card text-center p-4 border rounded-4 shadow-sm h-100">
+                            <div class="stat-icon green mx-auto mb-3">
+                                <i class="bi bi-building-check"></i>
+                            </div>
+                            <h2 class="display-6 fw-extrabold text-dark mb-1" style="font-weight: 800;">500+</h2>
+                            <p class="text-muted small mb-0 fw-semibold">Enterprise Clients</p>
+                        </div>
+                    </div>
+
+                    <!-- Stat 3 -->
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-card text-center p-4 border rounded-4 shadow-sm h-100">
+                            <div class="stat-icon purple mx-auto mb-3">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <h2 class="display-6 fw-extrabold text-dark mb-1" style="font-weight: 800;">10M+</h2>
+                            <p class="text-muted small mb-0 fw-semibold">Daily API Throughput</p>
+                        </div>
+                    </div>
+
+                    <!-- Stat 4 -->
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-card text-center p-4 border rounded-4 shadow-sm h-100">
+                            <div class="stat-icon orange mx-auto mb-3">
+                                <i class="bi bi-headset"></i>
+                            </div>
+                            <h2 class="display-6 fw-extrabold text-dark mb-1" style="font-weight: 800;">24/7</h2>
+                            <p class="text-muted small mb-0 fw-semibold">Expert SLA Support</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             SERVICES SECTION
+        ====================================== -->
+
+        <section id="services" class="section-padding bg-light py-5">
+            <div class="container py-4">
+
+                <div class="section-heading text-center mb-5">
+                    <span class="section-label text-uppercase fw-bold text-primary" style="letter-spacing: 0.12em; font-size: 0.75rem;">
+                        <i class="bi bi-stars"></i> WHAT WE DO
+                    </span>
+                    <h2 class="fw-extrabold text-dark mt-2 mb-3" style="font-weight: 800; font-size: clamp(2rem, 3.5vw, 2.6rem); letter-spacing: -0.02em;">
+                        Digital solutions engineered for business growth.
+                    </h2>
+                    <p class="text-muted mx-auto mb-0" style="max-width: 620px; font-size: 1.05rem;">
+                        From enterprise web software to AI process automation, we craft robust digital systems around real operational needs.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Service 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card p-4 bg-white border rounded-4 shadow-sm h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="service-icon mb-3">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <h3 class="fw-bold text-dark fs-4 mb-2">Web Development</h3>
+                                <p class="text-muted mb-4" style="font-size: 0.95rem;">
+                                    Modern, high-performance responsive web platforms built around enterprise business requirements.
+                                </p>
+                            </div>
+                            <div>
+                                <div class="d-flex align-items-center gap-1 mb-3">
+                                    <span class="tech-chip blue">React</span>
+                                    <span class="tech-chip purple">Node.js</span>
+                                    <span class="tech-chip emerald">TypeScript</span>
+                                </div>
+                                <a href="#" class="service-link fw-bold text-primary">
+                                    Learn More <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card p-4 bg-white border rounded-4 shadow-sm h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="service-icon mb-3">
+                                    <i class="bi bi-cpu"></i>
+                                </div>
+                                <h3 class="fw-bold text-dark fs-4 mb-2">AI & Automation</h3>
+                                <p class="text-muted mb-4" style="font-size: 0.95rem;">
+                                    Intelligent machine learning algorithms and workflow automation to boost operational throughput.
+                                </p>
+                            </div>
+                            <div>
+                                <div class="d-flex align-items-center gap-1 mb-3">
+                                    <span class="tech-chip purple">Python</span>
+                                    <span class="tech-chip cyan">TensorFlow</span>
+                                    <span class="tech-chip blue">OpenAI</span>
+                                </div>
+                                <a href="#" class="service-link fw-bold text-primary">
+                                    Learn More <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card p-4 bg-white border rounded-4 shadow-sm h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="service-icon mb-3">
+                                    <i class="bi bi-cloud-check"></i>
+                                </div>
+                                <h3 class="fw-bold text-dark fs-4 mb-2">Cloud Infrastructure</h3>
+                                <p class="text-muted mb-4" style="font-size: 0.95rem;">
+                                    Scalable, resilient cloud architecture and DevOps infrastructure tailored for growing teams.
+                                </p>
+                            </div>
+                            <div>
+                                <div class="d-flex align-items-center gap-1 mb-3">
+                                    <span class="tech-chip emerald">AWS</span>
+                                    <span class="tech-chip blue">Docker</span>
+                                    <span class="tech-chip purple">Kubernetes</span>
+                                </div>
+                                <a href="#" class="service-link fw-bold text-primary">
+                                    Learn More <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             WHY NEXORA SECTION
+        ====================================== -->
+
+        <section id="why-us" class="section-padding py-5">
+            <div class="container py-4">
+                <div class="row align-items-center g-5">
+
+                    <div class="col-lg-6">
+                        <span class="section-label text-uppercase fw-bold text-primary" style="letter-spacing: 0.12em; font-size: 0.75rem;">
+                            WHY NEXORA LABS
+                        </span>
+                        <h2 class="section-title fw-extrabold text-dark mt-2 mb-3" style="font-weight: 800; font-size: clamp(2rem, 3.5vw, 2.5rem); letter-spacing: -0.02em;">
+                            Technology engineered to solve real business problems.
+                        </h2>
+                        <p class="section-text text-muted mb-4" style="font-size: 1.05rem;">
+                            We focus on understanding your operational goals first, and then architecting the precise software solution to achieve them.
+                        </p>
+                        <a href="signup.html" class="btn btn-primary-custom px-4 py-2">
+                            Get Started Now <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex flex-column gap-3">
+
+                            <div class="why-item p-3 border rounded-3 bg-white shadow-sm d-flex gap-3 align-items-start">
+                                <div class="why-number bg-primary-subtle text-primary fw-extrabold rounded-3 px-3 py-2 fs-5" style="font-weight: 800;">
+                                    01
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold text-dark fs-5 mb-1">Business-First Strategy</h4>
+                                    <p class="text-muted mb-0 small">Every system begins with a deep dive into your business workflow and goals.</p>
+                                </div>
+                            </div>
+
+                            <div class="why-item p-3 border rounded-3 bg-white shadow-sm d-flex gap-3 align-items-start">
+                                <div class="why-number bg-purple-subtle text-purple fw-extrabold rounded-3 px-3 py-2 fs-5" style="font-weight: 800;">
+                                    02
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold text-dark fs-5 mb-1">Modern Tech Architecture</h4>
+                                    <p class="text-muted mb-0 small">Built using state-of-the-art frameworks for speed, security, and stability.</p>
+                                </div>
+                            </div>
+
+                            <div class="why-item p-3 border rounded-3 bg-white shadow-sm d-flex gap-3 align-items-start">
+                                <div class="why-number bg-success-subtle text-success fw-extrabold rounded-3 px-3 py-2 fs-5" style="font-weight: 800;">
+                                    03
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold text-dark fs-5 mb-1">Built to Scale</h4>
+                                    <p class="text-muted mb-0 small">Structured from day one to handle exponential traffic and team expansion.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             CALL TO ACTION (CTA BANNER)
+        ====================================== -->
+
+        <section id="contact" class="cta-section py-5">
+            <div class="container">
+                <div class="cta-box text-center p-5 rounded-4 text-white">
+
+                    <span class="badge bg-white-subtle text-white border border-white-subtle px-3 py-1.5 rounded-pill mb-3 fw-bold" style="background: rgba(255, 255, 255, 0.15); font-size: 11px; letter-spacing: 0.1em;">
+                        ● START YOUR PROJECT TODAY
+                    </span>
+
+                    <h2 class="fw-extrabold text-white mb-3" style="font-size: clamp(2rem, 3.8vw, 3rem); letter-spacing: -0.02em;">
+                        Ready to build something extraordinary?
+                    </h2>
+
+                    <p class="text-white opacity-90 mx-auto mb-4" style="max-width: 580px; font-size: 1.08rem;">
+                        Turn your business vision into a high-performance digital solution today.
+                    </p>
+
+                    <a href="signup.html" class="btn btn-light btn-lg px-5 py-3 fw-bold text-primary rounded-3 shadow">
+                        Get Started <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4 mb-4">
+
+                <div class="col-lg-4">
+                    <a href="index.html" class="footer-brand d-flex align-items-center gap-2 mb-3 text-decoration-none">
+                        <span class="brand-icon shadow-sm">
+                            <i class="bi bi-hexagon-fill"></i>
+                        </span>
+                        <span class="brand-name">
+                            Nexora<span>Labs</span>
+                        </span>
+                    </a>
+                    <p class="text-muted small mb-0" style="line-height: 1.6; color: #94a3b8;">
+                        Building modern enterprise digital systems, scalable cloud infrastructure, and AI automation for fast-growing global businesses.
+                    </p>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h6 class="fw-bold text-white mb-3">Quick Links</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small mb-0">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-us">Why Us</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h6 class="fw-bold text-white mb-3">Company</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small mb-0">
+                        <li><a href="#why-us">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h6 class="fw-bold text-white mb-3">Contact Us</h6>
+                    <p class="small mb-2" style="color: #94a3b8;"><i class="bi bi-envelope me-2 text-primary"></i> support@nexoralabs.com</p>
+                    <p class="small mb-3" style="color: #94a3b8;"><i class="bi bi-geo-alt me-2 text-primary"></i> Tech Innovation Park, Suite 400</p>
+                    <div class="social-links d-flex gap-2">
+                        <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" title="Discord"><i class="bi bi-discord"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center small">
+                <span>© 2026 Nexora Labs. All rights reserved.</span>
+                <span>Built for enterprise digital solutions.</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | Nexora Labs</title>
+
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body class="dashboard-body">
+
+
+<div class="dashboard-layout">
+
+
+    <!-- =====================================
+         SIDEBAR (Clean & Sleek Dark Theme)
+    ====================================== -->
+
+    <aside class="dashboard-sidebar">
+
+
+        <!-- Logo & Mobile Close Button -->
+
+        <div class="d-flex align-items-center justify-content-between w-100">
+
+            <a
+                href="dashboard.html"
+                class="dashboard-logo"
+            >
+
+                <span class="brand-icon">
+                    <i class="bi bi-hexagon-fill"></i>
+                </span>
+
+                <span class="brand-text">
+                    Nexora<span>Labs</span>
+                </span>
+
+            </a>
+
+            <button class="mobile-sidebar-close d-lg-none text-white border-0 bg-transparent fs-5 px-2" type="button" aria-label="Close sidebar">
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+        </div>
+
+        <!-- Navigation -->
+
+        <nav class="dashboard-nav">
+
+
+            <p class="nav-title">
+                MAIN MENU
+            </p>
+
+
+            <a
+                href="index.html"
+                class="dashboard-nav-link"
+            >
+                <i class="bi bi-house-door"></i>
+                <span>Home</span>
+            </a>
+
+            <a
+                href="dashboard.html"
+                class="dashboard-nav-link active"
+            >
+
+                <i class="bi bi-grid-1x2-fill"></i>
+
+                <span>
+                    Dashboard
+                </span>
+                <span class="badge-count">Live</span>
+
+            </a>
+
+
+            <a
+                href="#"
+                class="dashboard-nav-link"
+            >
+
+                <i class="bi bi-kanban"></i>
+
+                <span>
+                    Projects
+                </span>
+                <span class="badge-count">12</span>
+
+            </a>
+
+
+            <a
+                href="#"
+                class="dashboard-nav-link"
+            >
+
+                <i class="bi bi-check2-square"></i>
+
+                <span>
+                    Tasks
+                </span>
+
+            </a>
+
+
+            <a
+                href="#employees"
+                class="dashboard-nav-link"
+            >
+
+                <i class="bi bi-people"></i>
+
+                <span>
+                    Employees
+                </span>
+
+            </a>
+
+
+            <a
+                href="#"
+                class="dashboard-nav-link"
+            >
+
+                <i class="bi bi-chat-dots"></i>
+
+                <span>
+                    Messages
+                </span>
+                <span class="badge-dot"></span>
+
+            </a>
+
+
+            <p class="nav-title nav-title-space">
+                MANAGEMENT
+            </p>
+
+
+            <a
+                href="#analytics-chart"
+                class="dashboard-nav-link"
+            >
+
+                <i class="bi bi-bar-chart-line"></i>
+
+                <span>
+                    Analytics
+                </span>
+
+            </a>
+
+
+            <a
+                href="#"
+                class="dashboard-nav-link"
+            >
+
+                <i class="bi bi-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- Sidebar Bottom -->
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-user-mini">
+                <div class="avatar-circle">AS</div>
+                <div class="user-details">
+                    <strong>Anaya Sabtain</strong>
+                    <small>anaya@nexora.io</small>
+                </div>
+            </div>
+
+            <a
+                href="login.html"
+                class="logout-link"
+            >
+
+                <i class="bi bi-box-arrow-right"></i>
+
+                <span>
+                    Sign Out
+                </span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================
+         MAIN DASHBOARD AREA
+    ====================================== -->
+
+    <main class="dashboard-main">
+
+
+        <!-- =====================================
+             TOPBAR
+        ====================================== -->
+
+        <header class="dashboard-topbar">
+
+            <!-- Mobile Brand Logo (Left Side on Mobile Only) -->
+            <a href="dashboard.html" class="dashboard-logo d-lg-none py-0 me-auto d-flex align-items-center gap-2">
+                <span class="brand-icon" style="width: 34px; height: 34px; font-size: 15px; flex-shrink: 0;">
+                    <i class="bi bi-hexagon-fill"></i>
+                </span>
+                <span class="brand-text" style="font-size: 1.2rem; color: #0f172a; font-weight: 800; letter-spacing: -0.02em;">
+                    Nexora<span style="color: #2563eb;">Labs</span>
+                </span>
+            </a>
+
+            <!-- Search Bar -->
+            <div class="dashboard-search">
+                <i class="bi bi-search"></i>
+                <input
+                    type="search"
+                    placeholder="Search employees, roles, projects..."
+                >
+                <span class="search-shortcut">⌘K</span>
+            </div>
+
+            <!-- Right Topbar Actions -->
+            <div class="topbar-actions ms-auto d-flex align-items-center gap-2">
+
+                <!-- Mobile Menu Button (Right Side on Mobile Only) -->
+                <button
+                    class="mobile-menu-btn d-lg-none"
+                    type="button"
+                    aria-label="Toggle navigation menu"
+                >
+                    <i class="bi bi-grid-fill"></i>
+                </button>
+
+                <!-- User Profile Badge (Desktop Only) -->
+                <div class="dashboard-user d-none d-lg-flex">
+
+                    <div class="user-avatar">
+                        AS
+                    </div>
+
+                    <div class="user-info">
+                        <strong>
+                            Anaya Sabtain
+                        </strong>
+                        <small>
+                            Administrator
+                        </small>
+                    </div>
+
+                    <i class="bi bi-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================
+             MAIN CONTENT CANVAS
+        ====================================== -->
+
+        <div class="dashboard-content">
+
+
+            <!-- =====================================
+                 WELCOME GRAPHIC HERO BANNER
+            ====================================== -->
+
+            <section class="dashboard-welcome-banner">
+
+                <div class="welcome-text">
+
+                    <div class="welcome-badge">
+                        <span class="pulsing-dot"></span>
+                        ALL SYSTEMS OPERATIONAL &bull; 99.99% UPTIME
+                    </div>
+
+                    <h1>
+                        Welcome back, Anaya
+                    </h1>
+
+                    <p>
+                        Here's your live workspace status for <strong>Friday, Oct 2, 2026</strong>. 3 projects are ready for deployment today.
+                    </p>
+
+                </div>
+
+
+                <div class="welcome-actions">
+
+                    <button class="btn btn-glass-secondary" type="button">
+                        <i class="bi bi-download"></i> Export Analytics
+                    </button>
+
+                    <button class="btn btn-gradient-primary" type="button">
+                        <i class="bi bi-plus-lg"></i> Add Employee
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================
+                 STATISTICS CARDS GRID (CLEAR BUSINESS METRICS)
+            ====================================== -->
+
+            <section class="dashboard-stats mb-4">
+
+
+                <!-- Card 1: Total Employees -->
+
+                <div class="stat-card">
+
+                    <div class="stat-header">
+                        <div class="stat-icon blue">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <span class="stat-trend positive">
+                            <i class="bi bi-arrow-up-right"></i> +12%
+                        </span>
+                    </div>
+
+                    <div class="stat-body">
+
+                        <span>
+                            Total Employees
+                        </span>
+
+                        <strong>
+                            24
+                        </strong>
+
+                    </div>
+
+                    <div class="stat-footer">
+                        <small>Across 4 departments</small>
+                        <svg width="76" height="26" viewBox="0 0 76 26" fill="none">
+                            <defs>
+                                <linearGradient id="sparkGrad1" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#2563eb" stop-opacity="0.25"/>
+                                    <stop offset="100%" stop-color="#2563eb" stop-opacity="0.0"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M 2 20 Q 20 12 38 16 T 74 6 L 74 26 L 2 26 Z" fill="url(#sparkGrad1)"/>
+                            <path d="M 2 20 Q 20 12 38 16 T 74 6" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+                            <circle cx="74" cy="6" r="3.5" fill="#2563eb" stroke="#ffffff" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+
+                </div>
+
+
+                <!-- Card 2: Active Online -->
+
+                <div class="stat-card">
+
+                    <div class="stat-header">
+                        <div class="stat-icon green">
+                            <i class="bi bi-person-check-fill"></i>
+                        </div>
+                        <span class="stat-trend positive">
+                            <i class="bi bi-check-circle"></i> 75% Active
+                        </span>
+                    </div>
+
+                    <div class="stat-body">
+
+                        <span>
+                            Active Online
+                        </span>
+
+                        <strong>
+                            18
+                        </strong>
+
+                    </div>
+
+                    <div class="stat-footer">
+                        <small class="d-flex align-items-center gap-1">
+                            <span class="pulsing-dot" style="width: 6px; height: 6px;"></span> Live Now
+                        </small>
+                        <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-2 py-1 extra-small">
+                            18 / 24 Online
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <!-- Card 3: Active Software Projects -->
+
+                <div class="stat-card">
+
+                    <div class="stat-header">
+                        <div class="stat-icon purple">
+                            <i class="bi bi-kanban"></i>
+                        </div>
+                        <span class="stat-trend positive">
+                            <i class="bi bi-plus-circle"></i> +3 New
+                        </span>
+                    </div>
+
+                    <div class="stat-body">
+
+                        <span>
+                            Active Projects
+                        </span>
+
+                        <strong>
+                            12
+                        </strong>
+
+                    </div>
+
+                    <div class="stat-footer">
+                        <small>In active delivery</small>
+                        <svg width="76" height="26" viewBox="0 0 76 26" fill="none">
+                            <defs>
+                                <linearGradient id="sparkGrad3" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#9333ea" stop-opacity="0.25"/>
+                                    <stop offset="100%" stop-color="#9333ea" stop-opacity="0.0"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M 2 22 Q 18 16 36 18 T 74 5 L 74 26 L 2 26 Z" fill="url(#sparkGrad3)"/>
+                            <path d="M 2 22 Q 18 16 36 18 T 74 5" stroke="#9333ea" stroke-width="2.5" stroke-linecap="round"/>
+                            <circle cx="74" cy="5" r="3.5" fill="#9333ea" stroke="#ffffff" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+
+                </div>
+
+
+                <!-- Card 4: Remote & On Leave -->
+
+                <div class="stat-card">
+
+                    <div class="stat-header">
+                        <div class="stat-icon orange">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <span class="stat-trend text-warning" style="background: #fff7ed; color: #c2410c;">
+                            <i class="bi bi-globe"></i> Off-Site
+                        </span>
+                    </div>
+
+                    <div class="stat-body">
+
+                        <span>
+                            Remote & On Leave
+                        </span>
+
+                        <strong>
+                            4
+                        </strong>
+
+                    </div>
+
+                    <div class="stat-footer">
+                        <small>2 Remote &bull; 2 Leave</small>
+                        <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle rounded-pill px-2 py-1 extra-small">
+                            Approved Status
+                        </span>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+
+            <!-- =====================================
+                 HIGH-GRAPHIC DUAL ANALYTICS CHART PANEL
+            ====================================== -->
+
+            <section id="analytics-chart" class="dashboard-panel mb-4">
+
+                <div class="panel-header d-flex align-items-center justify-content-between flex-wrap gap-2">
+
+                    <div>
+                        <h2>
+                            <i class="bi bi-bar-chart-line text-primary me-2"></i>Performance Analytics Graph
+                        </h2>
+                        <p>
+                            Monthly software project deliverables, team throughput, and cloud infrastructure output
+                        </p>
+                    </div>
+
+                    <div class="panel-header-actions d-flex align-items-center gap-2">
+
+                        <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 fw-semibold">
+                            <i class="bi bi-circle-fill me-1 small" style="font-size: 8px;"></i> Tasks Delivered
+                        </span>
+
+                        <button class="btn btn-sm btn-light border fw-semibold">30 Days</button>
+                        <button class="btn btn-sm btn-primary fw-semibold">12 Months</button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Visual Bar & SVG Overlay Container -->
+
+                <div class="chart-visual-wrapper p-3">
+
+                    <!-- Graph Metrics Summary Pill Bar -->
+                    <div class="chart-metrics-wrapper d-flex align-items-center justify-content-between mb-3 px-2 flex-wrap gap-2">
+
+                        <div class="chart-metrics-row d-flex align-items-center gap-4">
+                            <div class="metric-item">
+                                <small class="text-muted d-block extra-small">TOTAL DELIVERABLES</small>
+                                <strong class="text-dark fs-5">1,420 Tasks</strong>
+                            </div>
+                            <div class="metric-item">
+                                <small class="text-muted d-block extra-small">SYSTEM UPTIME</small>
+                                <strong class="text-success fs-5">99.9% Uptime</strong>
+                            </div>
+                            <div class="metric-item">
+                                <small class="text-muted d-block extra-small">AVG LATENCY</small>
+                                <strong class="text-primary fs-5">14 ms</strong>
+                            </div>
+                        </div>
+
+                        <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-3 py-2">
+                            <i class="bi bi-graph-up-arrow me-1"></i> +28.4% Peak Output (Sep)
+                        </span>
+
+                    </div>
+
+
+                    <!-- SVG Curved Trend Overlay -->
+                    <div class="chart-svg-container">
+                        <svg class="chart-svg-curve" viewBox="0 0 1000 120" preserveAspectRatio="none">
+                            <defs>
+                                <linearGradient id="chartGlow" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#2563eb" stop-opacity="0.25"/>
+                                    <stop offset="100%" stop-color="#2563eb" stop-opacity="0.0"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M 40 70 Q 120 40 200 60 T 360 30 T 520 20 T 680 10 T 840 25 T 960 10 L 960 120 L 40 120 Z" fill="url(#chartGlow)" />
+                            <path d="M 40 70 Q 120 40 200 60 T 360 30 T 520 20 T 680 10 T 840 25 T 960 10" fill="none" stroke="#2563eb" stroke-width="3" />
+                            <circle cx="680" cy="10" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+                        </svg>
+                    </div>
+
+
+                    <!-- Monthly Chart Bars Visual -->
+
+                    <div class="chart-bars-visual">
+
+                        <div class="bar-col">
+                            <div class="bar-fill" style="--height: 42%;" title="Jan: 420 tasks"></div>
+                            <span class="bar-label">Jan</span>
+                        </div>
+
+                        <div class="bar-col">
+                            <div class="bar-fill" style="--height: 58%;" title="Feb: 580 tasks"></div>
+                            <span class="bar-label">Feb</span>
+                        </div>
+
+                        <div class="bar-col">
+                            <div class="bar-fill" style="--height: 50%;" title="Mar: 500 tasks"></div>
+                            <span class="bar-label">Mar</span>
+                        </div>
+
+                        <div class="bar-col">
+                            <div class="bar-fill" style="--height: 72%;" title="Apr: 720 tasks"></div>
+                            <span class="bar-label">Apr</span>
+                        </div>
+
+                        <div class="bar-col">
+                            <div class="bar-fill" style="--height: 65%;" title="May: 650 tasks"></div>
+                            <span class="bar-label">May</span>
+                        </div>
+
+                        <div class="bar-col">
+                            <div class="bar-fill" style="--height: 84%;" title="Jun: 840 tasks"></div>
+                            <span class="bar-label">Jun</span>
+                        </div>
+
+                        <div class="bar-col">
+                            <div class="bar-fill" style="--height: 78%;" title="Jul: 780 tasks"></div>
+                            <span class="bar-label">Jul</span>
+                        </div>
+
+                        <div class="bar-col">
+                            <div class="bar-fill active" style="--height: 100%;" title="Sep: Peak Output (1,050 tasks)"></div>
+                            <span class="bar-label fw-bold text-primary">Sep</span>
+                        </div>
+
+                        <div class="bar-col">
+                            <div class="bar-fill" style="--height: 88%;" title="Oct: 880 tasks"></div>
+                            <span class="bar-label">Oct</span>
+                        </div>
+
+                        <div class="bar-col">
+                            <div class="bar-fill" style="--height: 76%;" title="Nov: 760 tasks"></div>
+                            <span class="bar-label">Nov</span>
+                        </div>
+
+                        <div class="bar-col">
+                            <div class="bar-fill" style="--height: 95%;" title="Dec: 950 tasks"></div>
+                            <span class="bar-label">Dec</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+
+            <!-- =====================================
+                 LOWER GRID: PROJECTS, RESOURCE ALLOCATION & ACTIVITY STREAM
+            ====================================== -->
+
+            <section class="dashboard-grid mb-4">
+
+
+                <!-- Recent Projects & Allocation Panel -->
+
+                <div class="d-flex flex-column gap-4">
+
+
+                    <!-- Active Software Projects -->
+
+                    <div class="dashboard-panel">
+
+                        <div class="panel-header d-flex align-items-center justify-content-between mb-3">
+
+                            <div>
+                                <h2>
+                                    Active Software Projects
+                                </h2>
+                                <p>
+                                    Progress & tech stack status of client deliverables
+                                </p>
+                            </div>
+
+                            <a href="#" class="view-all-link">
+                                View All <i class="bi bi-chevron-right"></i>
+                            </a>
+
+                        </div>
+
+
+                        <div class="project-list d-flex flex-column gap-3">
+
+
+                            <!-- Project 1 -->
+
+                            <div class="project-card-item">
+
+                                <div class="project-icon bg-primary-subtle text-primary">
+                                    <i class="bi bi-cart3"></i>
+                                </div>
+
+                                <div class="project-main-info">
+
+                                    <div class="d-flex align-items-center gap-2 mb-1">
+                                        <strong class="text-dark">E-Commerce Platform</strong>
+                                        <span class="tech-chip blue">React</span>
+                                        <span class="tech-chip purple">Node.js</span>
+                                    </div>
+
+                                    <span class="text-muted small">
+                                        Lead: <strong>Warda Khan</strong> &bull; Due in 12 days
+                                    </span>
+
+                                </div>
+
+                                <div class="project-progress-wrap">
+
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <span class="extra-small text-muted fw-bold">Progress</span>
+                                        <span class="extra-small text-primary fw-bold">82%</span>
+                                    </div>
+
+                                    <div class="progress" style="height: 7px; background: #e2e8f0;">
+                                        <div class="progress-bar progress-bar-gradient" style="width: 82%"></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Project 2 -->
+
+                            <div class="project-card-item">
+
+                                <div class="project-icon bg-purple-subtle text-purple">
+                                    <i class="bi bi-phone"></i>
+                                </div>
+
+                                <div class="project-main-info">
+
+                                    <div class="d-flex align-items-center gap-2 mb-1">
+                                        <strong class="text-dark">Mobile Banking App</strong>
+                                        <span class="tech-chip cyan">Flutter</span>
+                                        <span class="tech-chip emerald">Python</span>
+                                    </div>
+
+                                    <span class="text-muted small">
+                                        Lead: <strong>Usman Ali</strong> &bull; Due in 18 days
+                                    </span>
+
+                                </div>
+
+                                <div class="project-progress-wrap">
+
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <span class="extra-small text-muted fw-bold">Progress</span>
+                                        <span class="extra-small text-purple fw-bold">64%</span>
+                                    </div>
+
+                                    <div class="progress" style="height: 7px; background: #e2e8f0;">
+                                        <div class="progress-bar progress-bar-purple" style="width: 64%"></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Project 3 -->
+
+                            <div class="project-card-item">
+
+                                <div class="project-icon bg-success-subtle text-success">
+                                    <i class="bi bi-cloud-check"></i>
+                                </div>
+
+                                <div class="project-main-info">
+
+                                    <div class="d-flex align-items-center gap-2 mb-1">
+                                        <strong class="text-dark">AWS Infrastructure Migration</strong>
+                                        <span class="tech-chip emerald">AWS</span>
+                                        <span class="tech-chip blue">Docker</span>
+                                    </div>
+
+                                    <span class="text-muted small">
+                                        Lead: <strong>David Miller</strong> &bull; Due in 25 days
+                                    </span>
+
+                                </div>
+
+                                <div class="project-progress-wrap">
+
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <span class="extra-small text-muted fw-bold">Progress</span>
+                                        <span class="extra-small text-success fw-bold">45%</span>
+                                    </div>
+
+                                    <div class="progress" style="height: 7px; background: #e2e8f0;">
+                                        <div class="progress-bar progress-bar-emerald" style="width: 45%"></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Resource Allocation SVG Donut Visual Card -->
+
+                    <div class="dashboard-panel">
+
+                        <div class="panel-header mb-3">
+                            <h2>
+                                <i class="bi bi-pie-chart text-purple me-2"></i>Department Resource Workload
+                            </h2>
+                            <p>
+                                Active distribution of engineering and operational tasks
+                            </p>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-around flex-wrap gap-4 p-2">
+
+                            <!-- SVG Donut Chart -->
+                            <div class="donut-chart-wrapper">
+                                <svg class="donut-chart-svg" viewBox="0 0 36 36">
+                                    <!-- Background Circle -->
+                                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e2e8f0" stroke-width="3.8"/>
+                                    <!-- Segment 1: Engineering (45%) -->
+                                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#2563eb" stroke-width="3.8" stroke-dasharray="45, 100"/>
+                                    <!-- Segment 2: Product (25%) -->
+                                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#9333ea" stroke-width="3.8" stroke-dasharray="25, 100" stroke-dashoffset="-45"/>
+                                    <!-- Segment 3: Design (15%) -->
+                                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#0891b2" stroke-width="3.8" stroke-dasharray="15, 100" stroke-dashoffset="-70"/>
+                                    <!-- Segment 4: QA (15%) -->
+                                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#10b981" stroke-width="3.8" stroke-dasharray="15, 100" stroke-dashoffset="-85"/>
+                                </svg>
+
+                                <div class="donut-center-text">
+                                    <strong>100%</strong>
+                                    <small>Allocated</small>
+                                </div>
+                            </div>
+
+                            <!-- Donut Legends -->
+                            <div class="d-flex flex-column gap-2">
+                                <div class="d-flex align-items-center justify-content-between gap-4">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="rounded-circle" style="width: 10px; height: 10px; background: #2563eb;"></span>
+                                        <span class="small fw-semibold text-dark">Engineering</span>
+                                    </div>
+                                    <strong class="small text-primary">45%</strong>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between gap-4">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="rounded-circle" style="width: 10px; height: 10px; background: #9333ea;"></span>
+                                        <span class="small fw-semibold text-dark">Product</span>
+                                    </div>
+                                    <strong class="small text-purple">25%</strong>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between gap-4">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="rounded-circle" style="width: 10px; height: 10px; background: #0891b2;"></span>
+                                        <span class="small fw-semibold text-dark">Design</span>
+                                    </div>
+                                    <strong class="small text-info">15%</strong>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between gap-4">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="rounded-circle" style="width: 10px; height: 10px; background: #10b981;"></span>
+                                        <span class="small fw-semibold text-dark">QA & Testing</span>
+                                    </div>
+                                    <strong class="small text-success">15%</strong>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Right Column: Live Stream & Server Health Card -->
+
+                <div class="d-flex flex-column gap-4">
+
+
+                    <!-- Live Activity Stream Card -->
+
+                    <div class="dashboard-panel">
+
+                        <div class="panel-header mb-3">
+                            <h2>
+                                Live Activity Stream
+                            </h2>
+                            <p>
+                                Real-time workspace updates & team logs
+                            </p>
+                        </div>
+
+                        <div class="activity-timeline">
+
+                            <div class="timeline-item">
+                                <div class="timeline-avatar bg-primary text-white">AS</div>
+                                <div class="timeline-content">
+                                    <p>
+                                        New project <strong>E-Commerce Platform</strong> was created.
+                                    </p>
+                                    <span class="timeline-time">
+                                        <i class="bi bi-clock me-1"></i>12 minutes ago
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-avatar bg-success text-white">WK</div>
+                                <div class="timeline-content">
+                                    <p>
+                                        Sprint task completed by <strong>Warda Khan</strong>.
+                                    </p>
+                                    <span class="timeline-time">
+                                        <i class="bi bi-clock me-1"></i>35 minutes ago
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-avatar bg-purple text-white">UA</div>
+                                <div class="timeline-content">
+                                    <p>
+                                        New member <strong>Usman Ali</strong> joined <strong>Nexora Labs</strong>.
+                                    </p>
+                                    <span class="timeline-time">
+                                        <i class="bi bi-clock me-1"></i>1 hour ago
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Server Hardware Performance Health Widget -->
+
+                    <div class="server-health-card">
+
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-hdd-stack-fill text-primary fs-5"></i>
+                                <strong class="text-dark small">Cloud Nodes Health</strong>
+                            </div>
+                            <span class="badge bg-success-subtle text-success border border-success-subtle extra-small">Online</span>
+                        </div>
+
+                        <!-- CPU Load -->
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between extra-small mb-1">
+                                <span class="text-muted">CPU Load</span>
+                                <span class="fw-bold text-dark">24%</span>
+                            </div>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-primary" style="width: 24%"></div>
+                            </div>
+                        </div>
+
+                        <!-- RAM Usage -->
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between extra-small mb-1">
+                                <span class="text-muted">Memory Usage</span>
+                                <span class="fw-bold text-dark">48%</span>
+                            </div>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-purple" style="width: 48%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Storage -->
+                        <div>
+                            <div class="d-flex justify-content-between extra-small mb-1">
+                                <span class="text-muted">Storage Capacity</span>
+                                <span class="fw-bold text-dark">61%</span>
+                            </div>
+                            <div class="progress" style="height: 5px;">
+                                <div class="progress-bar bg-info" style="width: 61%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =====================================
+                 EMPLOYEES DIRECTORY TABLE SECTION
+            ====================================== -->
+
+            <section id="employees" class="dashboard-panel mb-4">
+
+                <div class="panel-header d-flex align-items-center justify-content-between flex-wrap gap-2">
+
+                    <div>
+                        <h2>
+                            Team Directory (8+ Employees)
+                        </h2>
+                        <p>
+                            Detailed list of all registered employees, roles, and status
+                        </p>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-3 py-2">
+                            18 Total Team Members
+                        </span>
+                        <span class="badge bg-light text-muted border d-lg-none rounded-pill px-2 py-1 extra-small">
+                            <i class="bi bi-arrow-left-right me-1"></i> Swipe &rarr;
+                        </span>
+                    </div>
+
+                </div>
+
+                <!-- Responsive Table Wrapper for Mobile Scroll -->
+                <div class="table-responsive p-3">
+
+                    <table class="table table-hover align-middle mb-0">
+
+                        <thead class="table-light">
+
+                            <tr>
+
+                                <th scope="col">Name</th>
+
+                                <th scope="col">Role</th>
+
+                                <th scope="col">Department</th>
+
+                                <th scope="col">Email</th>
+
+                                <th scope="col">Joining Date</th>
+
+                                <th scope="col">Status</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <!-- Employee 1 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="avatar-circle bg-primary text-white font-weight-bold" style="width: 34px; height: 34px; font-size: 11px;">AS</div>
+                                        <div>
+                                            <strong class="text-dark d-block">Anaya Sabtain</strong>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Administrator</td>
+                                <td>Management</td>
+                                <td>anaya@nexora.io</td>
+                                <td>Jan 15, 2024</td>
+                                <td><span class="badge bg-success">Active</span></td>
+                            </tr>
+
+                            <!-- Employee 2 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="avatar-circle bg-success text-white font-weight-bold" style="width: 34px; height: 34px; font-size: 11px;">WK</div>
+                                        <div>
+                                            <strong class="text-dark d-block">Warda Khan</strong>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Lead Frontend Dev</td>
+                                <td>Engineering</td>
+                                <td>warda@nexora.io</td>
+                                <td>Feb 01, 2024</td>
+                                <td><span class="badge bg-success">Active</span></td>
+                            </tr>
+
+                            <!-- Employee 3 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="avatar-circle bg-info text-white font-weight-bold" style="width: 34px; height: 34px; font-size: 11px;">UA</div>
+                                        <div>
+                                            <strong class="text-dark d-block">Usman Ali</strong>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Senior DevOps Engineer</td>
+                                <td>Infrastructure</td>
+                                <td>usman@nexora.io</td>
+                                <td>Mar 10, 2024</td>
+                                <td><span class="badge bg-primary">Remote</span></td>
+                            </tr>
+
+                            <!-- Employee 4 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="avatar-circle bg-purple text-white font-weight-bold" style="width: 34px; height: 34px; font-size: 11px;">SJ</div>
+                                        <div>
+                                            <strong class="text-dark d-block">Sarah Jenkins</strong>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Product Manager</td>
+                                <td>Product</td>
+                                <td>sarah@nexora.io</td>
+                                <td>Apr 05, 2024</td>
+                                <td><span class="badge bg-success">Active</span></td>
+                            </tr>
+
+                            <!-- Employee 5 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="avatar-circle bg-warning text-dark font-weight-bold" style="width: 34px; height: 34px; font-size: 11px;">DM</div>
+                                        <div>
+                                            <strong class="text-dark d-block">David Miller</strong>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Fullstack Engineer</td>
+                                <td>Engineering</td>
+                                <td>david@nexora.io</td>
+                                <td>May 12, 2024</td>
+                                <td><span class="badge bg-warning text-dark">On Leave</span></td>
+                            </tr>
+
+                            <!-- Employee 6 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="avatar-circle bg-danger text-white font-weight-bold" style="width: 34px; height: 34px; font-size: 11px;">PS</div>
+                                        <div>
+                                            <strong class="text-dark d-block">Priya Sharma</strong>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>UI/UX Designer</td>
+                                <td>Design</td>
+                                <td>priya@nexora.io</td>
+                                <td>Jun 20, 2024</td>
+                                <td><span class="badge bg-primary">Remote</span></td>
+                            </tr>
+
+                            <!-- Employee 7 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="avatar-circle bg-dark text-white font-weight-bold" style="width: 34px; height: 34px; font-size: 11px;">AC</div>
+                                        <div>
+                                            <strong class="text-dark d-block">Alex Chen</strong>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Backend Developer</td>
+                                <td>Engineering</td>
+                                <td>alex@nexora.io</td>
+                                <td>Jul 08, 2024</td>
+                                <td><span class="badge bg-success">Active</span></td>
+                            </tr>
+
+                            <!-- Employee 8 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="avatar-circle bg-secondary text-white font-weight-bold" style="width: 34px; height: 34px; font-size: 11px;">MB</div>
+                                        <div>
+                                            <strong class="text-dark d-block">Michael Brown</strong>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>QA Lead Specialist</td>
+                                <td>Quality Assurance</td>
+                                <td>michael@nexora.io</td>
+                                <td>Aug 14, 2024</td>
+                                <td><span class="badge bg-success">Active</span></td>
+                            </tr>
+
+                            <!-- Employee 9 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="avatar-circle bg-primary text-white font-weight-bold" style="width: 34px; height: 34px; font-size: 11px;">FZ</div>
+                                        <div>
+                                            <strong class="text-dark d-block">Fatima Zahra</strong>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Data Scientist</td>
+                                <td>Analytics</td>
+                                <td>fatima@nexora.io</td>
+                                <td>Sep 01, 2024</td>
+                                <td><span class="badge bg-warning text-dark">On Leave</span></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+        <!-- ================= FOOTER (Dark Theme) ================= -->
+
+        <footer class="footer mt-5">
+            <div class="container-fluid px-4">
+                <div class="row g-4 mb-4">
+
+                    <div class="col-lg-4">
+                        <a href="index.html" class="footer-brand d-flex align-items-center gap-2 mb-3 text-decoration-none">
+                            <span class="brand-icon shadow-sm">
+                                <i class="bi bi-hexagon-fill"></i>
+                            </span>
+                            <span class="brand-name">
+                                Nexora<span>Labs</span>
+                            </span>
+                        </a>
+                        <p class="text-muted small mb-0" style="line-height: 1.6; color: #94a3b8;">
+                            Building modern enterprise digital systems, scalable cloud infrastructure, and AI automation for fast-growing global businesses.
+                        </p>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <h6 class="fw-bold text-white mb-3">Quick Links</h6>
+                        <ul class="list-unstyled d-flex flex-column gap-2 small mb-0">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#services">Services</a></li>
+                            <li><a href="index.html#why-us">Why Us</a></li>
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <h6 class="fw-bold text-white mb-3">Company</h6>
+                        <ul class="list-unstyled d-flex flex-column gap-2 small mb-0">
+                            <li><a href="index.html#why-us">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="signup.html">Sign Up</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h6 class="fw-bold text-white mb-3">Contact Us</h6>
+                        <p class="small mb-2" style="color: #94a3b8;"><i class="bi bi-envelope me-2 text-primary"></i> support@nexoralabs.com</p>
+                        <p class="small mb-3" style="color: #94a3b8;"><i class="bi bi-geo-alt me-2 text-primary"></i> Tech Innovation Park, Suite 400</p>
+                        <div class="social-links d-flex gap-2">
+                            <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
+                            <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" title="Discord"><i class="bi bi-discord"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center small">
+                    <span>© 2026 Nexora Labs. All rights reserved.</span>
+                    <span>Built for enterprise digital solutions.</span>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
